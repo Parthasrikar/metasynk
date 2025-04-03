@@ -86,6 +86,8 @@ function page1Animation() {
             yoyo: true,
         });
 }
+ScrollTrigger.config({ limitCallbacks: true });
+
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("load", () => {
