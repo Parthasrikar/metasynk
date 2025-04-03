@@ -11,7 +11,11 @@
 </head>
 
 <body>
-    <main class="">
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <main class="" id="content">
+        
         <div id="progress-bar"></div>
         <div class="page1">
             <nav>
@@ -21,9 +25,9 @@
                 </div>
                 <ul>
                     <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Services</a></li>
-                    <li><a href="#section4">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
 
                 <div class="toggle">
@@ -58,7 +62,7 @@
                 <div class="hero-bg right"></div> <!-- Right circle -->
             </section>
         </div>
-        <div class="page2">
+        <div class="page2" id="services">
             <h2>Our <span>Services</span></h2>
             <div class="card card1">
                 <div class="card-right">
@@ -117,7 +121,7 @@
             </section>
         </div>
 
-        <div class="page4">
+        <div class="page4" id="about">
             <h2>How we <span>Work</span></h2>
             <div class="work">
                 <div class="container">
@@ -134,7 +138,7 @@
             </div>
         </div>
 
-        <div class="page5">
+        <div class="page5" id="contact">
             <img src="./assets/shubham-dhage-T9rKvI3N0NM-unsplash-removebg-preview.png" alt="">
             <footer>
                 <div class="social">
@@ -143,15 +147,15 @@
                     <a href="#"><i class="ri-instagram-fill"></i></a>
                 </div>
                 <div>
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">services</a>
-                    <a href="#">contact</a>
+                    <a href="#section1">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
                 </div>
 
                 <div>
                     <p>&copy; 2023 MetaSynk. All rights reserved.</p><br>
-                    <p>Terms & Conditions | Privacy Policy</p>
+                    <p>Email: hr@metasynk.co.in | Contact: 7993726082, 8520878167</p>
                 </div>
             </footer>
             

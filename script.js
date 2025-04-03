@@ -5,7 +5,7 @@ function page1Animation() {
     tl.from("nav .logo, nav ul li, nav .toggle", {
         y: -30,
         duration: 0.5,
-        delay: 0.5,
+        delay: 1.5,
         opacity: 0,
         stagger: 0.1
     });
@@ -87,6 +87,25 @@ function page1Animation() {
         });
 }
 gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener("load", () => {
+  let loaderTl = gsap.timeline();
+
+  loaderTl.to("#loader", {
+      opacity: 0,
+      duration: 1.5,
+      ease: "power2.inOut"
+  })
+  .to("#loader", {
+      display: "none"
+  })
+  .from("#content", {
+      opacity: 0,
+      y: 50,
+      duration: 1.5,
+      ease: "power2.out"
+  }, "-=1"); // Overlapping animation
+});
 page1Animation()
 
 // Progress Bar Scroll Effect
