@@ -899,7 +899,7 @@ video:hover {
                     color: var(--text-color);
                 }
                 p {
-                    font-size: 2vw;
+                    font-size: 5vw;
                     color: var(--text-color);
                     margin-left: 10px;
                 }
