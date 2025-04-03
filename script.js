@@ -90,24 +90,6 @@ ScrollTrigger.config({ limitCallbacks: true });
 
 gsap.registerPlugin(ScrollTrigger);
 
-window.addEventListener("load", () => {
-  let loaderTl = gsap.timeline();
-
-  loaderTl.to("#loader", {
-      opacity: 0,
-      duration: 1.5,
-      ease: "power2.inOut"
-  })
-  .to("#loader", {
-      display: "none"
-  })
-  .from("#content", {
-      opacity: 0,
-      y: 50,
-      duration: 1.5,
-      ease: "power2.out"
-  }, "-=1"); // Overlapping animation
-});
 page1Animation()
 
 // Progress Bar Scroll Effect
